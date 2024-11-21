@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star X </title>
+    <style>
+        /* Global styling for dark theme */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            animation: fadeIn 2s ease-in-out; /* Add fade-in animation for the body */
+        }
+
+        /* Animation for fade-in effect */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            animation: slideIn 1s ease-out; /* Add slide-in effect for header */
+        }
+
+        /* Animation for sliding header */
+        @keyframes slideIn {
+            0% { transform: translateY(-50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        p {
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+            color: #b3b3b3; /* Slightly lighter text for paragraphs */
+            animation: fadeInText 3s ease-out; /* Text fade-in effect for paragraph */
+        }
+
+        /* Animation for fading in text */
+        @keyframes fadeInText {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Button styling */
+        .btn {
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #1f1f1f; /* Darker button background */
+            border: 2px solid #ff6f61; /* Accent border */
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            margin: 10px;
+            position: relative; /* For hover effects */
+            overflow: hidden;
+        }
+
+        .btn:hover {
+            background-color: #ff6f61; /* Button turns accent color on hover */
+            color: #121212;
+            border-color: #ffffff;
+        }
+
+        /* Hover effect animation */
+        .btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2); /* Subtle light overlay */
+            transition: height 0.3s ease;
+            z-index: 1;
+        }
+
+        .btn:hover::before {
+            height: 100%;
+        }
+
+        /* Container for buttons */
+        .button-container {
+            display: flex;
+            gap: 20px; /* Space between buttons */
+        }
+
+        /* Button text z-index fix */
+        .btn span {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Star X Key System</h1>
+    <p>Join Our Discord To Get Key Easily!</p>
+
+    <div class="button-container">
+        <!-- Button Join Discord -->
+        <a href="https://discord.gg/EwARkGncq4" class="btn" target="_blank">
+            <span>Join Discord</span>
+        </a>
+        <!-- Button Get Key -->
+        <a href="https://link-target.net/1236271/star-x-key-system-two" class="btn" target="_blank">
+            <span>Continue(Key)</span>
+        </a>
+    </div>
+
+</body>
+</html>
